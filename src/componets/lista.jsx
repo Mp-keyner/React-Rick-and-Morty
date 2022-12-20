@@ -5,7 +5,7 @@ import Personaje from './personaje';
 function Navpagina({pagina , setpagina }) {
     return (
         <header className='d-flex align-items-center'>
-            <p className='page'>Page : {pagina}</p>
+            <p>Page : {pagina}</p>
             <button className='btn btn-primary btn-sm pote'
                 onClick={() => {
                     setpagina(pagina - 1) 
