@@ -17,8 +17,8 @@
   margin: 0px 0px 0px 30px  
 }
 .page {
-  margin: 0 45pc 0px 0;
+  justify-content: space-between;
 }
 .container {
   padding: 1pc;
-}
+} 

@@ -18,6 +18,6 @@ const Personaje = ({ caracter }) => {
             </div>
         </div>
     );
-}
+} 
 
 export default Personaje;

@@ -2,20 +2,23 @@ import { useEffect, useState } from 'react'
 import Personaje from './personaje';
 
 
-function Navpagina({pagina , setpagina }) {
+function Navpagina({ pagina, setpagina }) {
     return (
-        <header className='d-flex align-items-center'>
+        <header className='d-flex align-items-center page'>
             <p>Page : {pagina}</p>
-            <button className='btn btn-primary btn-sm pote'
-                onClick={() => {
-                    setpagina(pagina - 1) 
-                }}
-            >Page {pagina - 1}</button>
-            <button className='btn btn-primary btn-sm pote'
-                onClick={() => {
-                    setpagina(pagina + 1) 
-                }}
-            >Page {pagina + 1}</button>
+            <div> 
+                <button className='btn btn-primary btn-sm pote'
+                    onClick={() => {
+                        setpagina(pagina - 1)
+                    }}
+                >Page {pagina - 1}</button>
+                <button className='btn btn-primary btn-sm pote'
+                    onClick={() => {
+                        setpagina(pagina + 1)
+                    }}
+                >Page {pagina + 1}</button>
+
+            </div>
         </header>
     )
 }
@@ -39,7 +42,7 @@ const Lista = () => {
 
     return (
         <div className='container'>
-            <Navpagina pagina={pagina} setpagina={setpagina}/>
+            <Navpagina pagina={pagina} setpagina={setpagina} />
             <div className='row'>
                 {caracter.map(caracter => {
                     return (
@@ -48,7 +51,7 @@ const Lista = () => {
                         </div>
                     )
                 })}
-            <Navpagina pagina={pagina} setpagina={setpagina}/>
+                <Navpagina pagina={pagina} setpagina={setpagina} />
             </div>
         </div>
     );
