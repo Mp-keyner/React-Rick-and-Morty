@@ -1,0 +1,24 @@
+.nombre{
+  color: rgb(15, 148, 236);
+}
+.vivo {
+  color: green;
+}
+.muerto{
+  color: red
+}
+.num {
+  margin: 0 80px 0 0;
+}
+.cen{
+  padding: 60px 0px 0px 0px;
+}
+.pote {
+  margin: 0px 0px 0px 30px  
+}
+.page {
+  margin: 0 45pc 0px 0;
+}
+.container {
+  padding: 1pc;
+}
